@@ -12,14 +12,14 @@ end forward
 
 global type w_consulta from window
 integer width = 3227
-integer height = 1844
+integer height = 2776
 boolean titlebar = true
 string title = "Untitled"
 boolean controlmenu = true
 boolean minbox = true
 boolean maxbox = true
 boolean resizable = true
-long backcolor = 32768
+long backcolor = 8388736
 string icon = "AppIcon!"
 boolean center = true
 cb_3 cb_3
