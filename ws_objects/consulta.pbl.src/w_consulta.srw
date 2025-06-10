@@ -34,11 +34,11 @@ end on
 type cb_1 from commandbutton within w_consulta
 integer x = 622
 integer y = 360
-integer width = 1637
+integer width = 1838
 integer height = 480
 integer taborder = 10
-integer textsize = -10
-integer weight = 400
+integer textsize = -26
+integer weight = 700
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
