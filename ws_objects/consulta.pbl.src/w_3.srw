@@ -8,7 +8,7 @@ end forward
 
 global type w_3 from window
 integer width = 5070
-integer height = 1568
+integer height = 2164
 boolean titlebar = true
 string title = "Untitled"
 boolean controlmenu = true

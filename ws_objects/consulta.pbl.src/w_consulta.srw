@@ -2,6 +2,8 @@
 forward
 global type w_consulta from window
 end type
+type cb_5 from commandbutton within w_consulta
+end type
 type cb_4 from commandbutton within w_consulta
 end type
 type cb_3 from commandbutton within w_consulta
@@ -14,7 +16,7 @@ end forward
 
 global type w_consulta from window
 integer width = 3227
-integer height = 2776
+integer height = 2484
 boolean titlebar = true
 string title = "Untitled"
 boolean controlmenu = true
@@ -24,6 +26,7 @@ boolean resizable = true
 long backcolor = 8388736
 string icon = "AppIcon!"
 boolean center = true
+cb_5 cb_5
 cb_4 cb_4
 cb_3 cb_3
 cb_2 cb_2
@@ -32,26 +35,44 @@ end type
 global w_consulta w_consulta
 
 on w_consulta.create
+this.cb_5=create cb_5
 this.cb_4=create cb_4
 this.cb_3=create cb_3
 this.cb_2=create cb_2
 this.cb_1=create cb_1
-this.Control[]={this.cb_4,&
+this.Control[]={this.cb_5,&
+this.cb_4,&
 this.cb_3,&
 this.cb_2,&
 this.cb_1}
 end on
 
 on w_consulta.destroy
+destroy(this.cb_5)
 destroy(this.cb_4)
 destroy(this.cb_3)
 destroy(this.cb_2)
 destroy(this.cb_1)
 end on
 
+type cb_5 from commandbutton within w_consulta
+integer x = 1042
+integer y = 1992
+integer width = 1143
+integer height = 316
+integer taborder = 50
+integer textsize = -28
+integer weight = 700
+fontcharset fontcharset = ansi!
+fontpitch fontpitch = variable!
+fontfamily fontfamily = swiss!
+string facename = "Tahoma"
+string text = "none"
+end type
+
 type cb_4 from commandbutton within w_consulta
-integer x = 1138
-integer y = 1604
+integer x = 1115
+integer y = 1584
 integer width = 1038
 integer height = 360
 integer taborder = 40
