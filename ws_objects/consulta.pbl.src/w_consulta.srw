@@ -2,6 +2,8 @@
 forward
 global type w_consulta from window
 end type
+type cb_2 from commandbutton within w_consulta
+end type
 type cb_1 from commandbutton within w_consulta
 end type
 end forward
@@ -18,18 +20,37 @@ boolean resizable = true
 long backcolor = 32768
 string icon = "AppIcon!"
 boolean center = true
+cb_2 cb_2
 cb_1 cb_1
 end type
 global w_consulta w_consulta
 
 on w_consulta.create
+this.cb_2=create cb_2
 this.cb_1=create cb_1
-this.Control[]={this.cb_1}
+this.Control[]={this.cb_2,&
+this.cb_1}
 end on
 
 on w_consulta.destroy
+destroy(this.cb_2)
 destroy(this.cb_1)
 end on
+
+type cb_2 from commandbutton within w_consulta
+integer x = 1070
+integer y = 944
+integer width = 1088
+integer height = 296
+integer taborder = 20
+integer textsize = -26
+integer weight = 700
+fontcharset fontcharset = ansi!
+fontpitch fontpitch = variable!
+fontfamily fontfamily = swiss!
+string facename = "Tahoma"
+string text = "none"
+end type
 
 type cb_1 from commandbutton within w_consulta
 integer x = 622
