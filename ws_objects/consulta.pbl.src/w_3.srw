@@ -32,13 +32,13 @@ destroy(this.cb_1)
 end on
 
 type cb_1 from commandbutton within w_3
-integer x = 1179
-integer y = 304
-integer width = 402
-integer height = 112
+integer x = 1056
+integer y = 292
+integer width = 1376
+integer height = 552
 integer taborder = 10
-integer textsize = -10
-integer weight = 400
+integer textsize = -48
+integer weight = 700
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
