@@ -1,0 +1,48 @@
+﻿$PBExportHeader$w_consulta.srw
+forward
+global type w_consulta from window
+end type
+type cb_1 from commandbutton within w_consulta
+end type
+end forward
+
+global type w_consulta from window
+integer width = 3227
+integer height = 1844
+boolean titlebar = true
+string title = "Untitled"
+boolean controlmenu = true
+boolean minbox = true
+boolean maxbox = true
+boolean resizable = true
+long backcolor = 67108864
+string icon = "AppIcon!"
+boolean center = true
+cb_1 cb_1
+end type
+global w_consulta w_consulta
+
+on w_consulta.create
+this.cb_1=create cb_1
+this.Control[]={this.cb_1}
+end on
+
+on w_consulta.destroy
+destroy(this.cb_1)
+end on
+
+type cb_1 from commandbutton within w_consulta
+integer x = 622
+integer y = 360
+integer width = 1637
+integer height = 480
+integer taborder = 10
+integer textsize = -10
+integer weight = 400
+fontcharset fontcharset = ansi!
+fontpitch fontpitch = variable!
+fontfamily fontfamily = swiss!
+string facename = "Tahoma"
+string text = "PowerBuilder 2025"
+end type
+
