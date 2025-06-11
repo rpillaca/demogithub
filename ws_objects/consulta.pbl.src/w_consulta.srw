@@ -23,7 +23,7 @@ boolean controlmenu = true
 boolean minbox = true
 boolean maxbox = true
 boolean resizable = true
-long backcolor = 8388736
+long backcolor = 15780518
 string icon = "AppIcon!"
 boolean center = true
 cb_5 cb_5
@@ -116,9 +116,9 @@ string text = "none"
 end type
 
 type cb_1 from commandbutton within w_consulta
-integer x = 622
+integer x = 699
 integer y = 360
-integer width = 1838
+integer width = 1760
 integer height = 480
 integer taborder = 10
 integer textsize = -26
