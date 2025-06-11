@@ -3,5 +3,5 @@ Save Format v3.0(19990112)
 @end;
 appname "consulta";
 applib "consulta.pbl";
-LibList "consulta.pbl";
+LibList "consulta.pbl;..\\consulta_dw.pbl";
 type "pb";
